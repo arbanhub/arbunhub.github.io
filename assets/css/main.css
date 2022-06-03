@@ -1,6 +1,6 @@
 body {
     margin:0;
-    height:100vh;
+    /* height:100vh; */
     background: linear-gradient( 
         115deg,
         rgb(83, 24, 178) 0% 2.5%,
@@ -44,5 +44,138 @@ body {
         rgb(28, 19, 73) 95% 97.5%,
         rgb(27, 19, 70) 97.5% 100%
     );
-        
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%;  */
+    /* height: 120vh; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 3vh;
+    width: 80vw;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    height: 7vh;
+}
+
+ul {
+    width: 60vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+  
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/fonts/Montserrat-Regular.otf);
+}
+li {
+    font-family: Montserrat;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5vh 2.5vw;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#logo {
+    display: flex;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(179, 70, 242) 0%, rgb(96, 9, 180) 100%);
+    float: left;
+    width: 10vw;
+    height: 7vh;
+    background-color: antiquewhite;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.middle {
+    padding-top: 5vh;
+    /* position: relative; */
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    justify-content: space-between;
+}
+.middle:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+.leftside {
+    position: relative;
+    left: 10vw;
+}
+.texts {
+    font-family: Montserrat;
+    position: relative;
+    top: 20vh;
+    color: white;
+}
+
+.title {
+    font-size: 5vh;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.subtitle {
+    width: 25vw;
+    font-size: 2vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    position: relative;
+}
+.button {
+    border-radius: 15px;
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    top: 20vh;
+  }
+
+.button1 {
+    background: linear-gradient(to right, rgb(179, 70, 242) 0%, rgb(96, 9, 180) 100%);
+    font-family: Montserrat;
+    color: white;
+  }
+  
+  .button1:hover {
+    background: rgb(64, 22, 103);
+  }
+.guyImg {
+    top: 5vh;
+    margin-left: 10vw;
+    width: 60vw;
+    background: url(/assets/images/theGuy.svg) no-repeat;
+    background-size: contain;
+    overflow: hidden;
 }
